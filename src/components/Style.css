@@ -1,0 +1,172 @@
+/* Center the form on the page */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f7f7f7, #e0e0e0);
+    padding: 20px;
+}
+
+/* Form styling */
+.expense-form {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Form Title */
+.form-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Success message */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Input and Select Fields Container */
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Individual Input Container */
+.input-container {
+    position: relative;
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-field:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+}
+
+.input-icon,
+.currency-symbol {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    color: #888;
+    font-size: 1.2rem;
+}
+
+/* Calendar and Date Section */
+.form-date {
+    font-size: 0.9rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-icon {
+    margin-right: 10px;
+    color: #555;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.submit-btn:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .expense-form {
+        padding: 30px;
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+    }
+
+    .input-field {
+        padding: 12px;
+    }
+
+    .submit-btn {
+        padding: 12px;
+    }
+}
+
+/* Progress Bar Container */
+.progress-bar-container {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.progress-bar-background {
+    background-color: #e0e0e0;
+    height: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.progress-text {
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Warning Message when Over Budget */
+.warning-message {
+    font-size: 1rem;
+    background-color: #fff3f3;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #f44336;
+    color: #f44336;
+    font-weight: bold;
+    margin-top: 10px;
+}

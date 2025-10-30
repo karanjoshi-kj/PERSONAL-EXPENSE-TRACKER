@@ -1,0 +1,190 @@
+/* Global reset */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+  /* prevent horizontal scroll */
+  overflow-y: auto;
+  /* allow vertical scroll */
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+}
+
+.app-container {
+  width: 90vw;
+  min-height: 95vh;
+  /* ensure at least full viewport height */
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  overflow: visible;
+  /* let content grow naturally */
+}
+
+/* Header - stays on top */
+.header {
+  text-align: center;
+  flex: 0 0 auto;
+  /* Fixed height */
+}
+
+.app-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.budget-info h2,
+.budget-info h3 {
+  color: #fff;
+  margin: 5px 0;
+}
+
+/* Currency selector */
+.currency-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.currency-selector select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Main content: form + list + chart */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  /* Take remaining height */
+  overflow-y: hidden;
+  /* We'll scroll inside sections individually */
+  gap: 20px;
+}
+
+/* Form section */
+.expense-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.expense-form input,
+.expense-form select {
+  flex: 1 1 150px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.expense-form button {
+  padding: 12px 20px;
+  background-color: #2575fc;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Expense list - scrollable if too long */
+.expense-list-container {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.expense-list {
+  list-style: none;
+  width: 100%;
+}
+
+.expense-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.expense-list li:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.expense-list li button {
+  background: none;
+  border: none;
+  color: #ff4c4c;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Chart container */
+.expense-category-chart {
+  flex: 1 1 auto;
+  /* Take remaining space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.expense-category-chart h2 {
+  margin-bottom: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.expense-category-chart canvas {
+  width: 100% !important;
+  max-height: 350px;
+  border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app-container {
+    width: 95vw;
+    height: 95vh;
+    padding: 15px 20px;
+  }
+
+  .expense-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .expense-form input,
+  .expense-form select,
+  .expense-form button {
+    width: 100%;
+  }
+}

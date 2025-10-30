@@ -1,0 +1,83 @@
+💰 PERSONAL EXPENSE TRACKER
+
+A responsive and user-friendly Expense Tracker built with React.js and Tailwind CSS that helps you manage and visualize your daily spending easily.
+
+Users can add, edit, and delete expenses, assign them to categories like 🛍️ Shopping, 🍔 Food, ✈️ Travel, 💡 Bills, etc., and view insightful summaries for income 💵, expenses 📉, and balance 📊.
+
+🚀 Features
+
+📅 Add / Edit / Delete expense records
+
+🧾 Category-wise filtering (Food, Travel, Bills, etc.)
+
+📈 Summary cards for total Income, Expenses, and Balance
+
+🎨 Fully responsive UI built with Tailwind CSS
+
+⚡ Fast & Dynamic frontend using React.js
+
+💾 Data persistence using local storage / backend (future upgrade)
+
+🛠️ Tech Stack
+Technology	Purpose
+React.js	Frontend framework
+Tailwind CSS	Styling & layout
+PostCSS	CSS processing
+JavaScript (ES6+)	Logic and interactivity
+npm	Dependency management
+📦 Folder Structure
+expense-tracker/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── App.js
+│   └── index.js
+├── package.json
+├── tailwind.config.js
+├── postcss.config.js
+└── README.md
+
+⚙️ Installation & Setup
+
+Clone the repo
+
+git clone https://github.com/karanjoshi-kj/PERSONAL-EXPENSE-TRACKER
+
+
+Navigate into the project
+
+cd PERSONAL-EXPENSE-TRACKER
+
+
+Install dependencies
+
+npm install
+
+
+Run the app
+
+npm start
+
+
+Build for production
+
+npm run build
+
+
+
+🧠 Future Improvements
+
+Add backend with Node.js + MongoDB
+
+User authentication (login/signup)
+
+Expense analytics using charts
+
+Dark/light mode toggle
+
+👨‍💻 Author
+
+Karan Joshi
+📍 Developer of Personal Expense Tracker
+🔗 GitHub Profile -->https://github.com/karanjoshi-kj/PERSONAL-EXPENSE-TRACKER

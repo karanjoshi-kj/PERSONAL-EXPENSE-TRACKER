@@ -1,0 +1,81 @@
+/* Footer Styling */
+.footer-container {
+    background: linear-gradient(to top, #fff, #f7f7f7);
+    padding: 40px 20px;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    transform: translateY(10px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.footer-container:hover {
+    transform: translateY(0);
+}
+
+.footer-content {
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.footer-text .font-semibold {
+    font-weight: 700;
+    color: #ff5f00;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.footer-text .font-semibold:hover {
+    color: #ff9e00;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff5f00;
+    /* Indian currency color */
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.social-icon i {
+    margin-right: 8px;
+}
+
+.app-badge img {
+    max-width: 100%;
+    max-height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.app-badge img:hover {
+    transform: scale(1.1);
+}
+
+.user-count {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.currency-info {
+    font-size: 0.85rem;
+    color: rgba(0, 0, 0, 0.5);
+}
